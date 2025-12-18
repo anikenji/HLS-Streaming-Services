@@ -1,0 +1,138 @@
+/**
+ * Embed Player Styles
+ */
+
+.embedContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+}
+
+.player {
+    width: 100%;
+    height: 100%;
+}
+
+/* Resume Modal */
+.resumeModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.resumeContent {
+    text-align: center;
+    padding: 40px;
+    background: rgba(30, 30, 30, 0.95);
+    border-radius: 16px;
+    max-width: 420px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+}
+
+.resumeContent h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.resumeContent p {
+    color: #b3b3b3;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.resumeTime {
+    display: inline-block;
+    background: #333;
+    color: #ffd700;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.resumeButtons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.resumeBtn {
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    color: #fff;
+}
+
+.resumeBtn:hover {
+    transform: scale(1.02);
+}
+
+.restartBtn {
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #dc3545;
+    color: #fff;
+}
+
+.restartBtn:hover {
+    background: #c82333;
+    transform: scale(1.02);
+}
+
+/* Skip Button */
+.skipButton {
+    position: absolute;
+    bottom: 80px;
+    right: 20px;
+    padding: 12px 24px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 50;
+    animation: fadeIn 0.3s ease;
+}
+
+.skipButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

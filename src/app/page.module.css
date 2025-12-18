@@ -1,0 +1,71 @@
+/**
+ * Auth Page Styles
+ */
+
+.authPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+  padding: 20px;
+}
+
+.authContainer {
+  width: 100%;
+  max-width: 420px;
+}
+
+.authBox {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.logo h1 {
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #6366f1 0%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+
+.logo p {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.authForm h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.authSwitch {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.authSwitch a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.authSwitch a:hover {
+  text-decoration: underline;
+}
